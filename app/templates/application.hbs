@@ -1,9 +1,12 @@
 
 {{#mdl-nav title='Playwrite' fixedHeader=true}}
-  {{mdl-nav-item name='Buttons'   route='buttons'}}
+  {{mdl-nav-item name='Home'   route='index' inHeader=false}}
+  {{mdl-nav-item name='Plays'   route='play' inHeader=false}}
   <div class="mdl-grid">
-  	<div class="mdl-cell mdl-cell--12-col">
+  	<div class="mdl-cell mdl-cell--2-col"></div>
+  	<div class="mdl-cell mdl-cell--8-col">
   		{{outlet}}
 	</div>
+	<div class="mdl-cell mdl-cell--2-col"></div>
   </div>
 {{/mdl-nav}}
