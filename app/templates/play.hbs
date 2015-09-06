@@ -1,0 +1,21 @@
+
+{{#mdl-table content=model as |row|}}
+	{{#mdl-table-col label='Title'}}
+		{{row.title}}
+	{{/mdl-table-col}}
+	{{#mdl-table-col label='Description'}}
+		{{row.description}}
+	{{/mdl-table-col}}
+	{{#mdl-table-col label='Author'}}
+		{{row.author}}
+	{{/mdl-table-col}}
+	{{#mdl-table-col label='Created'}}
+		{{row.createdAt}}
+	{{/mdl-table-col}}
+{{/mdl-table}}
+
+<div class="fabAddPlay">
+	{{mdl-button isFloating=true icon='add' action='addPlay'}}
+</div>
+
+{{outlet}}

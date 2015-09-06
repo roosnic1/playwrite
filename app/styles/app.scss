@@ -4,3 +4,11 @@ $color-primary: $palette-indigo-500;
 $color-accent: $palette-yellow-A200;
 
 @import 'material-design-lite';
+
+
+
+.fabAddPlay {
+	position: fixed;
+    right: 100px;
+    bottom: 100px;
+}
