@@ -6,7 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('play');
+  this.route('play', function() {
+    this.route('new');
+  });
 });
 
 export default Router;
